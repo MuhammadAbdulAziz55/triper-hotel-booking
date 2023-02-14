@@ -4,7 +4,7 @@
   margin: 20px auto;
   border: 1px solid #95a0a7;
   border-radius: 8px;
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 .form-title {
@@ -39,7 +39,7 @@
 }
 
 .btn-submit {
-  width: 310px;
+  width: 300px;
   height: 40px;
   margin-top: 20px;
   background: green;

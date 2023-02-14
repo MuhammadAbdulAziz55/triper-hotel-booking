@@ -10,6 +10,7 @@ import Rooms from "./Pages/Rooms/Rooms";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
 import RoomInfo from "./Components/RoomInfo/RoomInfo";
+import PrivateRoute from "./routes/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -18,11 +19,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <PrivateRoute>
+            <Home />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/rooms",
-        element: <RoomInfo />,
+        element: (
+          <PrivateRoute>
+            <RoomInfo />
+          </PrivateRoute>
+        ),
       },
 
       {
